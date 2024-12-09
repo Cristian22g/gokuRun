@@ -34,7 +34,7 @@ position: relative;
     left: -100px;
     bottom: 5em;
 
-    animation: desplazamiento 8s linear infinite;
+    animation: desplazamiento 8s linear infinite, postura 1s steps(1) infinite;
 }
 
 @keyframes desplazamiento {
@@ -43,5 +43,41 @@ position: relative;
     }
     to{
         left: 100%;
+    }
+}
+
+/*["-55px", "-110px", "-150px","-205px", "-255px", "-310px", "-360px"]*/
+@keyframes postura {
+    0% {
+        background-position-x: 0;
+        width: 55px;
+    }
+    14% {
+        background-position-x: -55px;
+        width: 55px;
+    }
+    28% {
+        background-position-x: -110px;
+        width: 40px;
+    }
+    42% {
+        background-position-x: -150px;
+        width: 55px;
+    }
+    57% {
+        background-position-x: -205px;
+        width: 55px;
+    }
+    71% {
+        background-position-x: -255px;
+        width: 55px;
+    }
+    85% {
+        background-position-x: -310px;
+        width: 40px;
+    }
+    100% {
+        background-position-x: -360px;
+        width: 55px;
     }
 }
